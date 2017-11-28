@@ -1,0 +1,140 @@
+/* GENERAL WEBSITE SETTINGS
+
+Avoid changing colors outside of this page
+Make layout specific settings in a specific css sheet
+
+Website Colors:
+
+	Dark Blue  - #557FA8
+	Light Blue - #9CC0E5
+	Green      - #9CA046
+	Orange     - #D17327
+
+	White      - #FFFFFF
+	Black      - #000000
+	Light Grey - #CCCCCC
+
+
+	*/
+
+body {
+	background:          #FFFFFFFF;
+	font-family:         "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size:           100%;
+	display:             flex;
+	min-height:          95vh;
+	flex-direction:      column;
+} header, footer {
+	width:               100%;
+	height:              auto;
+	min-height:          2em;
+} header {
+	position:            relative;
+	top:                 0;
+	left:                0;
+} .layout_wrapper {
+	flex:                1;
+	padding:             1em;
+} a {
+	color:               inherit;
+	text-decoration:     none;
+} .dropdown {
+	list-style-type:     none;
+	margin:              0;
+	padding:             0;
+}
+
+/* Header Styles */
+header .title {
+	color:               #9CA046;
+	padding:            .5em;
+	margin-top:          2em;
+	margin-bottom:       1em;
+} header .title h1 {
+	font-size:           3em;
+	color:               #557FA8;
+	display:             block;
+	font-weight:         bold;
+} header .title h2 {
+	font-size:           1.25em;
+	display:             block;
+	margin-left:         2em;
+} header nav {
+	width:               100%;
+	border-bottom:       .05em solid #CCCCCC;
+} header nav a {
+	display:             inline-block;
+	padding:             .5em .75em;
+	min-width:           3.25em;
+	background:          #9CC0E5;
+	color:               #000000;
+	font-weight:         bold;
+	text-align:          center;
+	font-size:           1em;
+} header nav a:hover {
+	background:          #D17327;
+	color:               #FFFFFF;
+} header nav .login {
+	float:               right;
+	margin-right:        .5em;
+} header nav .dropdown {
+	display:             inline-block;
+	max-width:           80%;
+	position:            relative;
+	margin-left:         .5em;
+} header nav .dropdown > li {
+	display:             inline;
+	position:            relative;
+	margin-left:         .2em;
+} header .dropdown ul {
+	visibility:          hidden;
+	position:            absolute;
+	left:                10%;
+	top:                 calc(100% + .3em);
+	width:               7em;
+	z-index:             1;
+} header .dropdown li:hover > ul {
+	visibility:          visible;
+} header .dropdown ul li a {
+	background:          #9CC0E599;
+	text-align:          center;
+	width:               8em;
+	position:            relative;
+} header .dropdown ul li a:hover {
+	background:          #D17327;
+}
+
+footer {
+	border-top:          .05em solid #CCCCCC;
+	text-align:          center;
+	font-size:           .9em;
+	line-height:         1.25;
+} footer section {
+	min-width:           15em;
+	width:               20%;
+	display:             inline-block;
+	padding:             1em;
+	text-align:          left;
+	vertical-align:      top;
+} footer section h1 {
+	font-size:           1.25em;
+	color:               #557FA8;
+	font-weight:         bold;
+	padding-top:         .5em;
+	padding-bottom:      .25em;
+} footer section a {
+	color:               #333333;
+} footer section a:hover {
+	color:               #9CA046;
+} footer section ul {
+	list-style-type:     square;
+	margin:              0;
+	padding-left:        2em;
+} footer #footer_contact ul {
+	list-style-type:     none;
+	padding-left:        .5em;
+} footer #footer_credit a {
+	color:               #557FA8;
+} footer #footer_credit a:hover {
+	color:               #D17327;
+} 
